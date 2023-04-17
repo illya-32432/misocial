@@ -102,8 +102,8 @@ export const images = () => {
     return gulp
     .src([
         "src/img/**/*"
-    ], {dot: true})
-    .pipe(cache(imagemin))
+    ])
+    .pipe(cache(imagemin()))
     .pipe(gulp.dest("docs/img"))
     .pipe(browserSync.reload({
         stream: true

@@ -1,17 +1,112 @@
 @import components/mixin
 
-.header-bg
-    +gradientBG ("../img/hero-bg.jpg")
+@font-face 
+    font-family: "Maven Pro"
+    src: url(../fonts/MavenPro-Bold.woff2) format("woff2"),url(../fonts/MavenPro-Bold.woff) format("woff")
+    font-weight: 700
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: "Maven Pro"
+    src: url(../fonts/MavenPro-Medium.woff2) format("woff2"),url(../fonts/MavenPro-Medium.woff) format("woff")
+    font-weight: 500
+    font-style: normal
+    font-display: swap
+
+
+@font-face 
+    font-family: "Maven Pro"
+    src: url(../fonts/MavenPro-Regular.woff2) format("woff2"),url(../fonts/MavenPro-Regular.woff) format("woff")
+    font-weight: 400
+    font-style: normal
+    font-display: swap
+
+body
+    margin: 0
+
+html
+    font-size: 1px
+
+.fon
+    width: 100%
+
+.logo
+    display: flex
+    align-items: center
+    position: absolute
+    p
+        font-size: 30px
+        letter-spacing: 6px
+        line-height: 29px
+        color: #ffffff
+        font-weight: 700
+        font-family: "Maven Pro"
+        margin: 0
 
 .cards
-    display: flex
-    justify-content: space-between
+    display: block
 
 .card
-    padding: 30px 20px
+    margin: 40rem 10rem
+    padding: 30rem 20rem
     text-align: center
     background-color: limegreen
-    border-radius: 5px 
+    border-radius: 15px
+    background-color: #fff
+    border-radius: 30px
+    filter: drop-shadow(0 0 46px rgba(204,204,223,0.71))
+    a
+        background-color: #6e45e2
+        padding: 20rem 50rem
+        font-size: 12px
+        letter-spacing: 1px
+        line-height: 32px
+        text-transform: uppercase
+        color: #ffffff
+        font-weight: 700
+        font-family: "Maven Pro"
+        text-align: center
+        text-decoration: none
+        border-radius: 30rem
+    a:hover
+        background-color: #573ca0
+        color: #b9b9b9
+    .fig
+        display: block
+    img
+        width: 50%
+        position: relative
+    .price
+        display: inline-block
+        font-size: 18rem
+        letter-spacing: .5rem
+        line-height: 72rem
+        color: #4f4f6f
+        font-weight: 500
+        font-family: "Maven Pro"
+        text-align: center
+        position: relative
+    .price b
+        font-size: 60rem
+        letter-spacing: -2rem
+        line-height: 72rem
+        color: #4f4f6f
+        font-weight: 500
+        font-family: "Maven Pro"
+        text-align: center
+    .currency
+        position: absolute
+        left: -15rem
+    .personal
+        font-size: 14rem
+        letter-spacing: 1rem
+        line-height: 32rem
+        text-transform: uppercase
+        color: #9fa4af
+        font-weight: 700
+        font-family: "Maven Pro"
     figcaption
         display: flex
         flex-direction: column
@@ -21,10 +116,14 @@
         margin: 0
         padding-left: 0
         list-style: none
-        min-height: 100px
+        min-height: 100rem
+        font-size: 16rem
+        height: 218rem
+        color: #9fa4af
+        font-weight: 400
+        font-family: "Maven Pro"
+        text-align: center
 
-    a
-        +btn(false, true)
 
 
 .light

@@ -2,9 +2,9 @@ $size: red
 =btn ($fixed: true, $empty: false)
 
     @if $fixed
-        width: 190px
+        width: 190rem
     @else
-        width: 150px
+        width: 150rem
 
     @if $empty != false
         background-color: #{$size}
@@ -13,7 +13,7 @@ $size: red
 
 
 =media ($size)
-    @media screen and (min-width: #{$size}px)
+    @media screen and (min-width: #{$size}rem)
         @content
 
 =gradientBG ($url)

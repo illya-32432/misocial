@@ -9,7 +9,7 @@
 mixin menu(menu, colorTheme="light")
     .navigation 
         .logo 
-            img(src="", alt="") 
+            img(src="../img/Symbol.png", alt="logo") 
             p(class=colorTheme) Misocial
         nav 
             ul.menu(class=colorTheme)
@@ -20,7 +20,7 @@ mixin menu(menu, colorTheme="light")
 -
     let cardsInfo = {
         satelite: {
-            img: "img/satelite.png",
+            img: "img/satelite.svg",
             alt: "satelite",
             personal: "personal",
             currency: "$",
@@ -37,7 +37,7 @@ mixin menu(menu, colorTheme="light")
             href: "#",
         },
         mars: {
-            img: "img/mars.png",
+            img: "img/mars.svg",
             alt: "mars",
             personal: "personal",
             currency: "$",
@@ -54,7 +54,7 @@ mixin menu(menu, colorTheme="light")
             href: "#",
         },
         rocket: {
-            img: "img/rocket.png",
+            img: "img/rocket.svg",
             alt: "rocket",
             personal: "personal",
             currency: "$",
@@ -74,16 +74,16 @@ mixin menu(menu, colorTheme="light")
 
 mixin card (oneCard)
     figure.card
-        figcaption 
+        figcaption.fig
             img(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
             p.price
-                span.currency  #{oneCard.currency}
-                b #{oneCard.price} /
+                bsup.currency #{oneCard.currency}
+                b #{oneCard.price}
                 if oneCard.isMonth
-                    | month
+                    |/month
                 else 
-                    | year
+                    |/year
             ul.description
                 for oneText in oneCard.description
                     li #{oneText}
