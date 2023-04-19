@@ -33,6 +33,7 @@ html
 
 header
     background: url(../img/fonfirst.svg) no-repeat
+    background-position: 50% 0%
     width: 100%
     min-height: 720rem  
     object-fit: cover
@@ -257,6 +258,7 @@ header .logo
 
 .secondfon
     background: url(../img/Map.svg) no-repeat
+    background-position: 20% 50%
     width: 100%
     display: block
     min-height: 525rem  
@@ -326,6 +328,8 @@ footer .logo
 .fl
     display: flex
     column-gap: 10rem
+    padding: 0
+    justify-content: center
 li
     list-style-type: none
 .social li a 
@@ -338,7 +342,7 @@ li
 .social li a.fb
     background-image: url(../img/facebook.svg)
     background-repeat: no-repeat
-    margin-left: 55rem
+    margin: 0
 .social li a.tw
     background-image: url(../img/twitter.svg)
     background-repeat: no-repeat
@@ -359,7 +363,17 @@ li
     text-align: center
 
             //@media
-
+@media screen and (min-width: 364px)
+    .suptitle:after
+        right: 30rem
+    .suptitle:before
+        left: 30rem
+    .plans-a
+        left: 43%
+    .maintitle:after
+        right: 120rem
+    .maintitle:before
+        left: 120rem
 @media screen and (min-width: 375px)
     .suptitle:after
         right: 35rem
@@ -382,7 +396,7 @@ li
     footer .logo 
         margin: 12% 0 0 20%
     .social li a.fb
-        margin-left: 80rem
+        margin-left: 0
 @media screen and (min-width: 425px)
     .suptitle:after 
         right: 60rem
@@ -399,25 +413,8 @@ li
     .butt
         margin-left: 30%
     footer .logo 
-        margin: 12% 0 0 25%
-    .social li a.fb 
-        margin-left: 105rem
-@media screen and (min-width: 450px)
-    .suptitle:after 
-        right: 70rem
-    .suptitle:before 
-        left: 70rem
-    .maintitle:after 
-        right: 160rem
-    .maintitle:before 
-        left: 160rem
-    .social li a.fb 
-        margin-left: 120rem
-    footer .logo 
         margin: 10% 0 0 25%
+    .social li a.fb 
+        margin-left: 0
 
 
-
-
-
-    
