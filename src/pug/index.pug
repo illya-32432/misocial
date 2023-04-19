@@ -9,8 +9,7 @@ html(lang="en")
     body 
         include components/mixin
         header 
-            a(href="#") 
-                +menu(mainMenu)
+            +menu(mainMenu)
             .miniwrapper
                 p.suptitle SOCIAL MARKETING & ANALYTICS 
                 p.wrappertitle Pricing Table
@@ -33,8 +32,7 @@ html(lang="en")
                     button.but get started
                     button.butt explore features
         footer 
-            a(href="#") 
-                +menu(mainMenu, "dark")
+            +menu(mainMenu, "dark")
             .hr
             .social
                 ul.fl
