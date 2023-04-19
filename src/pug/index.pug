@@ -9,7 +9,8 @@ html(lang="en")
     body 
         include components/mixin
         header 
-            +menu(mainMenu)
+            a(href="#") 
+                +menu(mainMenu)
             p.suptitle SOCIAL MARKETING & ANALYTICS 
             p.wrappertitle Pricing Table
             p.subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.
@@ -32,6 +33,19 @@ html(lang="en")
                 a(href="#") 
                     button.butt explore features
         footer 
-            +menu(mainMenu, "dark")
+            a(href="#") 
+                +menu(mainMenu, "dark")
+            .hr
+            .social
+                ul.fl
+                    li
+                        a(href="#").fb
+                    li 
+                        a(href="#").tw
+                    li 
+                        a(href="#").goog
+                    li 
+                        a(href="#").inst
+
 
         script(src="js/script.js") 
