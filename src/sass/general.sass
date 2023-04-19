@@ -91,7 +91,6 @@ header .logo
     font-family: "Maven Pro"
     text-align: center  
     margin: 15rem 0  
-
 .mainsubtitle
     font-size: 16rem
     line-height: 28rem
@@ -99,12 +98,12 @@ header .logo
     font-weight: 400
     font-family: "Maven Pro"
     text-align: center
-    margin: 30rem 10rem 0 10rem 
+    margin: 30rem 0 10rem 0 
 .plans-a
     text-decoration: none
-    display: inline-block
+    display: flex
+    justify-content: center
     position: relative
-    left: 40%
     bottom: -80rem
 .slider
     border: 1rem solid #fff
@@ -113,7 +112,6 @@ header .logo
     height: 64rem
     border-radius: 32rem
     background-color: #fff
-    left: 40%
     bottom: -95rem
 .slider:before
     background: url(../img/cryg.svg)
@@ -133,7 +131,7 @@ header .logo
     margin: 0 15rem
 
 .card
-    margin: 60rem 10rem
+    margin: 30rem 10rem
     padding: 30rem 20rem
     text-align: center
     background-color: limegreen
@@ -365,8 +363,6 @@ li
 
             //@media
 @media screen and (min-width: 360px)
-    .plans-a
-        left: 43%
     .but
         margin-left: 25%
     .butt
@@ -374,10 +370,8 @@ li
     footer .logo 
         margin: 10% 0 0 20%
 @media screen and (min-width: 375px)
-    .plans-a
-        left: 43%
     .card
-        margin: 60rem 20rem
+        margin: 30rem 20rem
     .fotm
         margin: 50rem 0 50rem 0
     .but
@@ -390,7 +384,7 @@ li
         margin-left: 0
 @media screen and (min-width: 425px)
     .card 
-        margin: 60rem 30rem
+        margin: 30rem 30rem
     .but
         margin-left: 30%
     .butt
@@ -400,4 +394,29 @@ li
     .social li a.fb 
         margin-left: 0
 
+@media screen and (min-width: 758px)
+    .cards
+        display: flex
+    .miniwrapper
+        width: 500rem
+        margin: 0 auto
+    .mainsubtitle
+        width: 300rem
+        margin: 30rem auto
+    .hr
+        margin: 0 15rem 25rem 15rem
+    footer .logo 
+        margin: 5% 0 0 2%
+    .but 
+        margin-left: 38%
+    .butt
+        margin-left: 38%
+    .secondfon
+        background-position: 20% 0%
+    .card
+        margin: 30rem 15rem
+        a
+            padding: 12rem 23rem
+            position: relative
+            bottom: -20rem
 
