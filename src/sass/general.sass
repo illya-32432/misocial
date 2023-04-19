@@ -205,7 +205,7 @@ header .logo
         font-family: "Maven Pro"
         text-align: center
 .card:hover
-    border: none
+    border-color: transparent
     filter: drop-shadow(0 0 46rem rgba(204,204,223,0.71))
 .suptitle
     text-align: center
@@ -419,4 +419,23 @@ li
             padding: 12rem 23rem
             position: relative
             bottom: -20rem
-
+@media screen and (min-width: 1024px)
+    .card
+        a
+            padding: 20rem 50rem
+            position: static
+    .but 
+        margin-left: 41%
+    .butt
+        margin-left: 41%
+    footer .logo
+        margin: 4% 0 0 2%   
+@media screen and (min-width: 1440px)
+    .cards
+        justify-content: space-between
+    .but 
+        margin-left: 43%
+    .butt
+        margin-left: 43%
+    footer .logo
+        margin: 3% 0 0 2% 
