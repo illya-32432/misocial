@@ -46,6 +46,7 @@ header .logo
 .logo
     display: flex
     padding: 15rem 15rem
+    column-gap: 20rem
     align-items: center
     p
         font-size: 30rem
@@ -288,8 +289,8 @@ header .logo
     border: none
     margin: 0 0 20rem 0
     border-radius: 32rem
-    background-color: #5836b6
-    color: #fff
+    background-color: #fff
+    color: #c2c9db
     font-size: 12rem
     letter-spacing: 1rem
     line-height: 32rem
@@ -373,21 +374,38 @@ footer .logo
         margin: 50rem 0 50rem 0
     .social li a.fb
         margin-left: 0
+    .syma
+        display: flex
+        column-gap: 30rem
+        justify-content: center
+    .but
+        padding: 10rem 35rem
+    .butt
+        padding: 10rem 15rem
 @media screen and (min-width: 425px)
     .card 
         margin: 30rem 30rem
     .social li a.fb 
         margin-left: 0
+    .card
+        .description    
+            min-height: 137rem
 
 @media screen and (min-width: 758px)
+    footer .logo
+        justify-content: flex-start
     .cards
         display: flex
+        .description    
+            min-height: 195rem
     .miniwrapper
         width: 500rem
         margin: 0 auto
     .mainsubtitle
         width: 300rem
         margin: 30rem auto
+    .fotm
+        margin: 50rem 0 110rem 0
     .hr
         margin: 0 15rem 25rem 15rem
     .secondfon
@@ -398,6 +416,10 @@ footer .logo
             padding: 12rem 23rem
             position: relative
             bottom: -20rem
+    .but
+        padding: 15rem 60rem
+    .butt
+        padding: 15rem 40rem
 @media screen and (min-width: 1024px)
     .card
         a
@@ -405,4 +427,6 @@ footer .logo
             position: static 
 @media screen and (min-width: 1440px)
     .cards
+        width: 1200rem
+        margin: 0 auto
         justify-content: space-between
