@@ -160,6 +160,7 @@ header .logo
         display: block
     img
         width: 50%
+        height: 24%
         position: relative
     .price
         display: inline-block
@@ -182,6 +183,7 @@ header .logo
     .currency
         position: absolute
         left: -15rem
+        bottom: 40rem
     .personal
         font-size: 14rem
         letter-spacing: 1rem
@@ -367,6 +369,7 @@ footer .logo
     text-align: center
 
             //@media
+
 @media screen and (min-width: 375px)
     .card
         margin: 30rem 20rem
@@ -380,9 +383,15 @@ footer .logo
         justify-content: center
     .but
         padding: 10rem 35rem
+    .secondfon
+        min-height: 340rem
     .butt
         padding: 10rem 15rem
 @media screen and (min-width: 425px)
+    .fotm
+        margin: 0 0 20rem 0
+    .secondfon
+        min-height: 340rem
     .card 
         margin: 30rem 30rem
     .social li a.fb 
@@ -392,39 +401,49 @@ footer .logo
             min-height: 137rem
 
 @media screen and (min-width: 758px)
+    .flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 15rem 0 15rem
     footer .logo
         justify-content: flex-start
     .cards
         display: flex
         .description    
-            min-height: 195rem
+            min-height: 155rem
     .miniwrapper
         width: 500rem
         margin: 0 auto
     .mainsubtitle
         width: 300rem
         margin: 30rem auto
-    .fotm
-        margin: 50rem 0 110rem 0
     .hr
         margin: 0 15rem 25rem 15rem
     .secondfon
-        background-position: 20% 0%
+        background-position: 30% 0%
     .card
-        margin: 30rem 15rem
+        margin: 30rem 10rem
         a
             padding: 12rem 23rem
             position: relative
             bottom: -20rem
+        img
+            height: 18%
     .but
         padding: 15rem 60rem
     .butt
         padding: 15rem 40rem
 @media screen and (min-width: 1024px)
+    .cards
+        .description
+            min-height: 160rem
     .card
         a
             padding: 20rem 50rem
-            position: static 
+            position: static
+        img
+            height: 25% 
 @media screen and (min-width: 1360px)
     .cards
         width: 1200rem
@@ -432,4 +451,8 @@ footer .logo
         justify-content: space-between
     .card
         .description    
-            min-height: 121rem
+            min-height: 135rem
+        img
+            height: 27%
+    .slider
+        bottom: -150rem

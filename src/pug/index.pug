@@ -25,7 +25,7 @@ html(lang="en")
                 +card(cardsInfo.satelite)
                 +card(cardsInfo.mars)
                 +card(cardsInfo.rocket)
-            span.secondfon
+            .secondfon
                 p.footertitlesup SOCAL MARKETING & ANALYTICS
                 p.fotm Take control of your data
                 .syma
@@ -34,16 +34,17 @@ html(lang="en")
         footer 
             +menu(mainMenu, "dark")
             .hr
-            .social
-                ul.fl
-                    li
-                        a(href="#").fb
-                    li 
-                        a(href="#").tw
-                    li 
-                        a(href="#").goog
-                    li 
-                        a(href="#").inst
-            p.last © 2017 Mass Impressions & Tranmautritam. Make the right impression.
+            .flex
+                .social
+                    ul.fl
+                        li
+                            a(href="#").fb
+                        li 
+                            a(href="#").tw
+                        li 
+                            a(href="#").goog
+                        li 
+                            a(href="#").inst
+                p.last © 2017 Mass Impressions & Tranmautritam. Make the right impression.
 
         script(src="js/script.js") 
