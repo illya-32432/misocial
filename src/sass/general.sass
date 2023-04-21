@@ -504,8 +504,6 @@ footer nav
         display: flex
         a
             color: #000
-    .burger
-        display: none
     .flex
         display: flex
         justify-content: space-between
@@ -535,6 +533,24 @@ footer nav
             bottom: -20rem
         img
             height: 18%
+    .but
+        padding: 15rem 60rem
+    .butt
+        padding: 15rem 40rem
+    header nav
+        padding-right: 20rem
+@media screen and (min-width: 1024px)
+    .burger
+        display: none
+    .cards
+        .description
+            min-height: 160rem
+    .card
+        a
+            padding: 20rem 50rem
+            position: static
+        img
+            height: 25% 
     .menu li+li
         border: none
     .menu
@@ -550,26 +566,14 @@ footer nav
             color: #fff
             display: inline-block
             padding: 0
+            transition: 1s
+    .menu li a:hover
+        text-decoration: underline
+        transition: 1s
     .navigation
         display: flex
         align-items: center
         justify-content: space-between
-    .but
-        padding: 15rem 60rem
-    .butt
-        padding: 15rem 40rem
-    header nav
-        display: flex
-@media screen and (min-width: 1024px)
-    .cards
-        .description
-            min-height: 160rem
-    .card
-        a
-            padding: 20rem 50rem
-            position: static
-        img
-            height: 25% 
 @media screen and (min-width: 1360px)
     .cards
         width: 1200rem
