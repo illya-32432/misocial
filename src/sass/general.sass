@@ -46,7 +46,7 @@ header .logo
 .logo
     display: flex
     padding: 15rem 15rem
-    column-gap: 20rem
+    column-gap: 10rem
     align-items: center
     p
         font-size: 30rem
@@ -328,7 +328,7 @@ header .logo
         text-transform: uppercase
 
 .hr
-    border-bottom: 1.5px solid #f2f2f3
+    border-bottom: 1.5rem solid #f2f2f3
     margin: 0 15rem 40rem 15rem
 .fl
     display: flex
@@ -362,6 +362,25 @@ li
     text-align: center
 footer .logo
     justify-content: center
+header nav
+    height: 25%
+    width: 50%
+    /* top: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    z-index: 3
+    /* padding: 50rem 20rem;
+    ul
+        flex-direction: column
+        row-gap: 50rem
+    li a
+        font-size: 20rem
+        text-decoration: none
+        color: #fff
+footer nav
+    display: none
+.navigation
+    display: flex
 .last
     opacity: 0.502
     font-size: 14rem
@@ -370,6 +389,83 @@ footer .logo
     font-weight: 500
     font-family: "Maven Pro"
     text-align: center
+
+
+
+/*             Burgerrrrrr          */
+.burger
+    position: absolute
+    padding: 10rem 15rem 15rem 15rem
+    width: 24rem
+    height: 50rem
+    left: 83%
+    cursor: pointer
+
+.burger span,
+.burger span:before,
+.burger span:after
+    content: ""
+    position: absolute
+    width: 35rem
+    height: 2rem
+    background-color: #fcfcfc
+    border-radius: 5rem
+    top: 55%
+    transition: box-shadow .25s ease-in-out
+
+.burger span
+    transform: translateY(-50%) translateX(-5%)
+
+.burger span:before
+    top: 10rem
+
+.burger span:after
+    top: -10rem
+
+.burger-open span,
+.burger-open span:before,
+.burger-open span:after
+    background-color: #000
+
+
+.burger-open span
+    transition: .5s
+    transform: rotate(-45deg) translateX(-3rem)
+    top: 38rem
+
+.burger-open span:before
+    transform: scale(0)
+
+.burger-open span:after
+    transition: .5s
+    transform: rotate(90deg) translateX(10rem) 
+
+.menu 
+    display: none
+    position: absolute
+    left: 85rem
+    top: 74rem
+    margin: 0
+    text-align: center
+    padding-left: 0
+    list-style: none
+    border-radius: 5rem
+    overflow-y: hidden
+    z-index: 2
+    li
+        background-color: #fff
+.menu li + li 
+    border-top: 1rem solid #6e5151
+
+.menu a 
+    display: block
+    padding: 5rem 20rem
+    text-decoration: none
+    color: #222122
+    font-family: "Maven Pro"    
+
+.active-burger 
+    display: block
 
             //@media
 
@@ -404,6 +500,12 @@ footer .logo
             min-height: 137rem
 
 @media screen and (min-width: 758px)
+    footer nav
+        display: flex
+        a
+            color: #000
+    .burger
+        display: none
     .flex
         display: flex
         justify-content: space-between
@@ -433,10 +535,27 @@ footer .logo
             bottom: -20rem
         img
             height: 18%
+    .menu li+li
+        border: none
+    .menu
+        display: flex
+        position: static
+        li
+            background-color: none
+            left: 0
+            top: 0
+        a
+            color: #fff
+            display: inline-block
+            padding: 0
+    .navigation
+        justify-content: space-between
     .but
         padding: 15rem 60rem
     .butt
         padding: 15rem 40rem
+    header nav
+        display: flex
 @media screen and (min-width: 1024px)
     .cards
         .description
