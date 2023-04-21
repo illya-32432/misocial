@@ -504,6 +504,39 @@ footer nav
         display: flex
         a
             color: #000
+    footer .menu
+        display: block
+
+    footer .menu li+li
+        border: none
+    footer .menu li a:hover
+        text-decoration: underline
+        transition: 1s
+    footer .menu
+        display: flex
+        position: static
+        flex-direction: row
+        justify-content: space-between
+        padding-right: 20rem
+        column-gap: 15rem
+        li
+            background-color: transparent
+            left: 0
+            top: 0
+        a
+            color: #000
+            font-size: 20rem
+            display: inline-block
+            padding: 0
+            transition: 1s
+    footer .menu li a:hover
+        text-decoration: underline
+        transition: 1s
+    footer .navigation
+        display: flex
+        align-items: center
+        justify-content: space-between
+
     .flex
         display: flex
         justify-content: space-between
@@ -540,6 +573,8 @@ footer nav
     header nav
         padding-right: 20rem
 @media screen and (min-width: 1024px)
+    footer .menu
+        padding-right: 25rem
     .burger
         display: none
     .cards
