@@ -83,6 +83,17 @@ header .logo
     background-color: #6e45e2
     position: absolute
 
+.bottom
+    display: none
+    font-size: 17rem
+    border: 1rem solid #ffffff
+    text-transform: uppercase
+    color: #fff
+    padding: 13rem 20rem
+    border-radius: 35rem
+    font-weight: 500
+    font-family: "Maven Pro"
+
 .mainwraptitle
     font-size: 60rem
     letter-spacing: -2rem
@@ -367,11 +378,7 @@ footer .logo
 header nav
     height: 25%
     width: 50%
-    /* top: 0; */
-    /* right: 0; */
-    /* left: 0; */
     z-index: 3
-    /* padding: 50rem 20rem;
     ul
         flex-direction: column
         row-gap: 50rem
@@ -383,6 +390,8 @@ footer nav
     display: none
 .navigation
     display: flex
+footer .navigation
+    display: block
 .last
     opacity: 0.502
     font-size: 14rem
@@ -423,13 +432,6 @@ footer nav
 
 .burger span:after
     top: -10rem
-
-.burger-open span,
-.burger-open span:before,
-.burger-open span:after
-    background-color: #000
-
-
 .burger-open span
     transition: .5s
     transform: rotate(-45deg) translateX(-3rem)
@@ -576,8 +578,17 @@ footer nav
     header nav
         padding-right: 20rem
 @media screen and (min-width: 1024px)
+    footer .bottom
+        background-color: #5e56d4
+        border: none
+        width: 110rem
+    .bottom
+        display: block
+        margin-right: 15rem
+        width: 125rem
     footer .menu
-        padding-right: 25rem
+        column-gap: 20rem
+        padding-right: 0
     .burger
         display: none
     .cards
@@ -595,7 +606,7 @@ footer nav
         display: flex
         position: static
         flex-direction: row
-        justify-content: space-between
+        column-gap: 15rem
         li
             background-color: transparent
             left: 0
@@ -612,6 +623,10 @@ footer nav
         display: flex
         align-items: center
         justify-content: space-between
+    header nav 
+        padding-left: 110rem
+        padding-right: 0
+
 @media screen and (min-width: 1360px)
     .cards
         width: 1200rem
