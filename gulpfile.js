@@ -69,7 +69,7 @@ export const js = () => {
             "src/js/**/*.js"
         ])
         .pipe(uglify.default())
-        .pipe(concat("scripts.js"))
+        .pipe(concat("script.js"))
         .pipe(gulp.dest("docs/js"))
         .pipe(browserSync.reload({
             stream: true

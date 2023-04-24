@@ -346,7 +346,7 @@ header .logo
 .fl
     display: flex
     column-gap: 10rem
-    padding: 0
+    padding: 0 0 20rem 0
     justify-content: center
 li
     list-style-type: none
@@ -379,6 +379,7 @@ header nav
     height: 25%
     width: 50%
     z-index: 3
+    position: relative
     ul
         flex-direction: column
         row-gap: 50rem
@@ -409,7 +410,7 @@ footer .navigation
     padding: 10rem 15rem 15rem 15rem
     width: 24rem
     height: 50rem
-    left: 83%
+    right: 15rem
     cursor: pointer
 
 .burger span,
@@ -447,7 +448,7 @@ footer .navigation
 .menu 
     display: none
     position: absolute
-    left: 85rem
+    right: 20rem
     top: 74rem
     margin: 0
     text-align: center
@@ -457,15 +458,15 @@ footer .navigation
     overflow-y: hidden
     z-index: 2
     li
-        background-color: #fff
+        background-color: #6e45e2
 .menu li + li 
-    border-top: 1rem solid #6e5151
+    border-top: 1rem solid #fff
 
 .menu a 
     display: block
-    padding: 5rem 20rem
+    padding: 20rem 100rem
     text-decoration: none
-    color: #222122
+    color: #fff
     font-family: "Maven Pro"    
 
 .active-burger 
