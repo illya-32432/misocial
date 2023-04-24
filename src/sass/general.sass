@@ -43,13 +43,13 @@ header
 header .logo
     p   
         color: #ffffff
+        font-size: 26rem
 .logo
     display: flex
     padding: 15rem 15rem
     column-gap: 10rem
     align-items: center
     p
-        font-size: 30rem
         letter-spacing: 6rem
         line-height: 29rem
         font-weight: 700
@@ -154,7 +154,7 @@ header .logo
     border: 1rem solid #afafaf
     a
         background-color: #ffffff
-        padding: 20rem 50rem
+        padding: 15rem 50rem
         font-size: 12rem
         letter-spacing: 1rem
         line-height: 32rem
@@ -182,6 +182,7 @@ header .logo
         letter-spacing: .5rem
         line-height: 72rem
         color: #4f4f6f
+        margin-top: 0
         font-weight: 500
         font-family: "Maven Pro"
         text-align: center
@@ -201,6 +202,7 @@ header .logo
     .personal
         font-size: 14rem
         letter-spacing: 1rem
+        margin: 30rem 0 0 0
         line-height: 32rem
         text-transform: uppercase
         color: #9fa4af
@@ -225,7 +227,7 @@ header .logo
     border-color: transparent
     transition: 1s
     transform: scale(1.05)
-    filter: drop-shadow(0 0 46rem rgba(204,204,223,0.71))
+    box-shadow: 0 0 46rem rgba(204,204,223,0.71)
 .suptitle
     text-align: center
     margin: 0
@@ -375,6 +377,13 @@ li
     text-align: center
 footer .logo
     justify-content: center
+    font-size: 30rem
+    letter-spacing: 6rem
+    line-height: 29rem
+    font-weight: 700
+    font-family: "Maven Pro"
+    margin: 0
+    text-transform: uppercase
 header nav
     height: 25%
     width: 50%
@@ -477,16 +486,19 @@ footer .navigation
             //@media
 
 @media screen and (min-width: 375px)
+    .footertitlesup
+        padding-top: 100rem
     .card
         margin: 45rem 20rem
     .fotm
-        margin: 50rem 0 50rem 0
+        margin: 10rem 0 20rem 0
     .social li a.fb
         margin-left: 0
     .syma
         display: flex
-        column-gap: 30rem
+        column-gap: 15rem
         justify-content: center
+        padding-bottom: 90rem
     .but
         padding: 10rem 35rem
     .secondfon
@@ -503,10 +515,14 @@ footer .navigation
     .social li a.fb 
         margin-left: 0
     .card
+        a
+            padding: 19rem 60rem
         .description    
             min-height: 137rem
 
 @media screen and (min-width: 758px)
+    .cards
+        flex-wrap: wrap
     footer nav
         display: flex
         a
@@ -533,6 +549,7 @@ footer .navigation
         a
             color: #6a6a77
             font-size: 20rem
+            font-weight: 500
             display: inline-block
             padding: 0
             transition: 1s
@@ -554,8 +571,9 @@ footer .navigation
         justify-content: flex-start
     .cards
         display: flex
+        justify-content: center
         .description    
-            min-height: 155rem
+            min-height: 110rem
     .miniwrapper
         width: 500rem
         margin: 0 auto
@@ -569,11 +587,11 @@ footer .navigation
     .card
         margin: 30rem 10rem
         a
-            padding: 12rem 23rem
+            padding: 17rem 40rem
             position: relative
             bottom: -20rem
         img
-            height: 18%
+            height: 24%
     .but
         padding: 15rem 60rem
     .butt
